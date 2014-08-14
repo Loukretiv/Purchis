@@ -574,9 +574,9 @@
                                    <header class="group section w-prop-header">
                                             <h5 class="col span_2_of_4 ft-semi"><a href="" class="ft-dark">Values Appreciation <small><i class="fa fa-external-link"></i></small></a></h5>
                                             <div class="col span_2_of_4">
-                                            	<form>
+                                            	<form style="text-align:right;">
                                                 	<label for="prop-value-cap">
-                                                    	<span>Desired Cap (%): </span>
+                                                    	<span>Desired Cap <small>(%)</small>: </span>
                                                         <input type="text" style="width:25px;" value="10">
                                                     </label>
                                                 </form>
@@ -624,23 +624,35 @@
                                                 	<div class="prop-value-drag">
                                                         <!-- This is an arrow for the drag item -->
                                                         <span class="prop-value-arrows">
-                                                            <i class="fa fa-arrow"></i>
+                                                            <i class="fa fa-caret-up"></i>
                                                         </span>
                                                         <!-- Important drag items go in here -->
-                                                        <div class="">
+                                                        <div class="prop-val-adj ft-white">
                                                             <!-- div that encloses the adjusting numbers -->
-                                                            <div class="">
+                                                            <div class="section group">
+                                                                <p class="col span_4_of_4 prop-val-adj-topNums ft-semi">
+                                                                    <span class="">
+                                                                        40
+                                                                    </span> %
+                                                                </p>
                                                             </div>
                                                             <!-- Div that will be made draggable, also will have the name of the area -->
-                                                            <div class="">
+                                                            <div class="section group">
+                                                                <p class="col span_4_of_4 prop-val-adj-title ft-black">
+                                                                    Vacancy
+                                                                </p>
                                                             </div>
                                                             <!-- Div that will hold the changing cap rate -->
-                                                            <div class="">
+                                                            <div class="section group">
+                                                                <p class="col span_4_of_4 prop-val-adj-cap ft-light">
+                                                                    <span class="prop-val-adj-cap">
+                                                                    </span> % Cap Rate
+                                                                </p>
                                                             </div>
                                                         </div>
                                                         <!-- This is where the bottom arrow for the drag item goes -->
                                                         <span class="prop-value-arrows">
-                                                            <i class="fa fa-arrow"></i>
+                                                            <i class="fa fa-caret-down"></i>
                                                         </span>
                                                     </div>
                                                 </div>
