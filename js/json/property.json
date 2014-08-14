@@ -1,0 +1,65 @@
+{"property": {
+	"script": "$('.w-menu').easytabs({panelContext: $(document),updateHash: false});$('.w-prop-tabs').easytabs({updateHash: false});",
+	"header": {
+		"propertyName": "Jasmine Homes",
+		"breadCrumb": "Properties / Deals / Jasmine Home"
+		},
+	"topMenu": [
+		{
+			"href": "w-menu-prop-status",
+			"link": "Deal"
+			},
+		{
+			"href": "w-menu-prop-stage",
+			"link": "Map"
+			}
+		],
+	"propertyInfo": {
+		"property": {
+			"propertyName": "Jasmine Homes",
+			"propertyAddress": {
+				"street": "7335 NW 51 Street",
+				"city": "Lauderhill",
+				"State": "FL",
+				"zip": 33319
+				},
+			"County": "Broward",
+			"GLA": 123456,
+			"lot": "1 acre",
+			"type": "Multifamily",
+			"yearBuilt": 1991,
+			"units": 200,
+			"vacancy": 10,
+			"price": 1250000,
+			"assessed": 1000000
+			},
+		"owner": {
+			"ownerName": "OWNER CORP.",
+			"ownerAddress": {
+				"street": "7335 NW 51 Street",
+				"city": "Lauderhill",
+				"State": "FL",
+				"zip": 33319
+				},
+			"purchaseDate": "12/30/1987",
+			"purchasePrice": 1000000,
+			"management": "Self-Managed",
+			"motivation": "High",
+			"reasonToSell": "Father died and left property. I don't want to have to manage it."
+			},
+		"financing": {
+			"lender": "BANK OF AMERICA",
+			"currentBal": 900000,
+			"originalAmt": 950000,
+			"interest": 4.535,
+			"ltv": 5.3,
+			"origination": "12/12/1987",
+			"loanTerm": "10 Years",
+			"maturity": "12/30/2016",
+			"loanStatus": "current",
+			"monthlyPmt": 20000
+			}
+		}
+
+	}
+}

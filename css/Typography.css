@@ -1,0 +1,26 @@
+.ft-thin {	font-family: "Segoe UI Light", "Proxima Nova Th", "Kozuka Gothic Pro EL";}
+.ft-light {	font-family:"Segoe UI Semilight", "Proxima Nova Lt", "Kozuka Gothic Pro L";	}
+.ft-reg {font-family:"Segoe UI", "Proxima Nova Rg", "Kozuka Gothic Pro R";}
+.ft-semi {font-family:"Segoe UI Semibold", "Proxima Nova Rg", "Kozuka Gothic Pro M";}
+.ft-black {font-family:"Segoe UI Black", "Proxima Nova Bl", "Kozuka Gothic Pro H";}
+
+body {font-family: "Segoe UI", "Proxima Nova Rg", "Kozuka Gothic Pro R", helvetica, arial, sans-serif;}
+
+h1, h2, h3, h4, h5, h6 {}
+h1 {font-size:49px;}
+h2 {font-size:34px;}
+h3 {font-size:24px;}
+h4 {font-size:18px;}
+h5 {font-size:16px;}
+h5.col { border-right:1px solid rgba(0,0,0,.3);
+}
+h6 {}
+
+.ft-white {color:white;}
+.ft-blue {color:blue}
+.ft-ltblue {color:#bdd1ce;}
+.ft-dark-grey {color:#494949;}
+.ft-dark {color:black;}
+.ft-dark-green {color:#163038}
+.ft-loukblue {color:#a3c1c9}
+.ft-red {color:#8f061e;}

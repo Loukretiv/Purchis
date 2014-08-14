@@ -1,0 +1,625 @@
+
+			<section class="window w-medium w-property">
+            	<!-- Taskbar to close and expand -->
+            	<div class="w-topBar-Wrapper">
+                	<ul class="w-topBar ft-white">
+                    	<li class="w-topBar-Open">
+                        	<i class="fa fa-expand"></i>
+                        </li>
+                        <li class="w-topBar-Close">
+                        	<i class="fa fa-chevron-left"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End taskbar -->
+                
+            	<aside>
+                	<header class="ft-white">
+                    	<h3 class="ft-light">Property Name</h3>
+                        <span class="w-bread ft-light">
+                        	Properties / Deals / Property Name
+                        </span>
+                    </header>
+                    
+                    <nav class="w-menu">
+                    	<ul>
+                        	<li>
+                            	<a href="#w-menu-prop-status" class="ft-white w-menu-a">
+                                	<span class="ft-semi">Stage:</span>
+                                    <span class="ft-light">Deal</span>
+                            	</a>
+                            </li>
+                            <li>
+                            	<a  href="#w-menu-prop-stage" class="ft-white w-menu-a ft-semi">
+                                	Map
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                
+                <article class="w-content">
+                	<div class="w-content-container">
+                		<!-- content area for the pages -->
+                        <!-- Area of hidden Menu container -->
+                        <div class="w-menu-container w-prop-item">
+                        	<span class="w-menu-closer">
+                            	[close]
+                            </span>
+                        	<div class="w-menu-item group section" id="w-menu-prop-status">
+                            	<form class="col span_2_of_3">
+                                    <fieldset>
+                                        <legend>Stage</legend>
+                                        <label for="fm-p-stage">
+                                            <span class="fm-title ft-light">Property Stage</span>
+                                            <span class="fm-guide ft-semi">Select the stage of this property</span>
+                                            <span class="fm-error"></span>
+                                            <select name="fm-p-stage" id="fm-p-stage">
+                                                <option value="" selected="selected"> -Select-</option>
+                                                <option value="">Lead</option>
+                                                <option value="">Prospect</option>
+                                                <option value="">Deal</option>
+                                            </select>
+                                        </label>
+                                        <label>
+                                        	<input type="submit" value="Save">
+                                        </label>
+                                    </fieldset>
+                            	</form>
+                                <form class="col span_1_of_3">
+                                	<fieldset>
+                                    	<legend>Status</legend>
+                                        <label for="fm-p-delete">
+                                        	<span class="fm-title ft-light">Property Status</span>
+                                            <span class="fm-guide ft-semi">Select property status.</span>
+                                            <span class="fm-error"></span>
+                                            <select>
+                                            	<option selected="selected">Active</option>
+                                                <option value="">Inactive</option>
+                                                <option value="">Delete</option>
+                                            </select>
+                                        </label>
+                                        <label>
+                                        	<input type="submit" value="Save">
+                                        </label>
+                                    </fieldset>
+                                    
+                                </form>
+                            </div>
+                            <div class="w-menu-item" id="w-menu-prop-stage">
+                            	<iframe
+                                  width="100%"
+                                  height="450"
+                                  frameborder="0" style="border:0"
+                                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCrAskAeLKc38h84CnOGDWdmnUbVzA6PSM&q=7335+NW+51+st,+Lauderhill,+FL+33319">
+                                </iframe>
+                            </div>
+                        </div>
+                        <!-- end of hidden menu -->
+                        
+                        <!-- Beginning of Property Information Area -->
+                        <div class="w-prop w-prop-tabs">
+                        	<ul class="w-prop-tab-menu">
+                            	<li><a href="#prop-info-property" title="" class="active">Property</a></li>
+                                <li><a href="#prop-info-owner" title="">Owner</a></li>
+                                <li><a href="#prop-info-financing" title="">Financing</a></li>
+                            </ul>
+                            <div class="w-prop-item">
+                            	<!-- Property Information form -->
+                            	<form class="section group prop-info " id="prop-info-property">
+                                	<table class="col span_2_of_4">
+                                    	<tr>
+                                        	<td>
+                                            	<label class="">Property Name</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="Jasmine Homes">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Street Address</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="7335 NW 41 Street">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">City, State Zip</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="Lauderhill, FL 33319">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">County</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="County">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">GLA (sqft)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="123,456">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Lot Size</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="1 acre">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="col span_2_of_4">
+                                    	<tr>
+                                        	<td>
+                                            	<label class="">Type</label>
+                                            </td>
+                                            <td>
+                                            	<select class="ft-light">
+                                                	<option value="">Select</option>
+                                                    <option value="">Hotel</option>
+                                                    <option value="">Industrial</option>
+                                                    <option value="" selected="selected">Multifamily</option>
+                                                    <option value="">Office</option>
+                                                    <option value="">Retail</option>
+                                                    <option value="">Self Storage</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Year built</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="1991">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Units</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="200">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Vacancy (%)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="10">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Price ($)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="1,250,000">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Assessed Val. ($)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="1,000,000"> 
+                                            </td>
+                                        </tr>
+                                    </table>                                    
+                                </form>
+                                <!-- Property Owner form -->
+                                <form class="section group prop-info " id="prop-info-owner">
+                                	<table class="col span_2_of_4">
+                                    	<tr>
+                                        	<td>
+                                            	<label class="">Owner Name</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="OWNER CORP.">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Street Address</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="7335 NW 41 Street">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">City, State Zip</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="Lauderhill, FL 33319">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Purchase Date</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="12/30/1987">
+                                            </td>
+                                        </tr>
+                                        
+                                    </table>
+                                    <table class="col span_2_of_4">
+                                    	
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Purchase Price ($)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="1,000,000">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Management</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="Self-managed">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Motivation</label>
+                                            </td>
+                                            <td>
+                                            	<select class="ft-light">
+                                                	<option value="">High</option>
+                                                    <option value="">Medium</option>
+                                                    <option value="">Low</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Reason to sell</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="Father died, left property">
+                                            </td>
+                                        </tr>
+                                    </table>                                    
+                                </form>
+                                <!-- Property Financing Form -->
+                                <form class="section group prop-info " id="prop-info-financing">
+                                	<table class="col span_2_of_4">
+                                    	<tr>
+                                        	<td>
+                                            	<label class="">Lender</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="BANK OF AMERICA">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Current Bal. ($)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="900,000">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Original Amt. ($)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="$950,000">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Interest Rate (%)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="4.535">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">LTV</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="col span_2_of_4">                                    	
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Origination</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="12/12/1987">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Loan Term</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="10 Years">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Maturity date</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="12/30/2016">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Loan Status</label>
+                                            </td>
+                                            <td>
+                                            	<select class="ft-light">
+                                                	<option value="">Current</option>
+                                                    <option value="">30+ days</option>
+                                                    <option value="">60+ days</option>
+                                                    <option value="">90+ days</option>
+                                                    <option value="">Foreclosure</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Monthly pymt ($)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="20,000">
+                                            </td>
+                                        </tr>
+                                    </table>                                    
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End of Property Information Area -->
+                        <!-- Beginning of Activity Area -->
+                        <div class="w-prop">
+                        	<h4 class="ft-light">Activity</h4>
+                            <div class="group section">
+                            	<!-- Property feeds section -->
+                            	<div class="col span_2_of_3 w-prop-item">
+                                	<header class="group section w-prop-header">
+                                    	<h5 class="col span_3_of_4 ft-semi"><a href="" class="ft-dark">Feed <small><i class="fa fa-external-link"></i></small></a></h5>
+                                        <a href="" class="ft-dark col span_1_of_4 prop-header-link">New <small><i class="fa fa-plus"></i></small></a>
+                                    </header>
+                                    <ul class="prop-feed">
+                                    	<li class="group section">
+                                        	<div class="col span_1_of_3 prop-feed-meta">
+                                            	<span class="ft-semi">Joram Clervius</span>
+                                                <span class="ft-light">December 12, 2014</span>
+                                            </div>
+                                            <div class="col span_2_of_3 prop-feed-content">
+                                            	<p>In here is a comment, just so you know. This is where they will go. These people are funny, thinking that we would go down without a fight. Little do they know</p>
+                                            </div>
+                                        </li>
+                                        <li class="group section">
+                                        	<div class="col span_1_of_3 prop-feed-meta">
+                                            	<span class="ft-semi">Joram Clervius</span>
+                                                <span class="ft-light">December 12, 2014</span>
+                                            </div>
+                                            <div class="col span_2_of_3 prop-feed-content">
+                                            	<p>In here is a comment, just so you know. This is where they will go. These people are funny, thinking that we would go down without a fight. Little do they know</p>
+                                            </div>
+                                        </li>
+                                        <li class="group section">
+                                        	<div class="col span_1_of_3 prop-feed-meta">
+                                            	<span class="ft-semi">Joram Clervius</span>
+                                                <span class="ft-light">December 12, 2014</span>
+                                            </div>
+                                            <div class="col span_2_of_3 prop-feed-content">
+                                            	<p>In here is a comment, just so you know. This is where they will go. These people are funny, thinking that we would go down without a fight. Little do they know</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End of Property feed section -->
+                                <div class="col span_1_of_3">
+                                	<div class="w-prop-item prop-docs" style="margin-bottom:10.391px">
+                                    	<header class="group section w-prop-header">
+                                            <h5 class="col span_3_of_4 ft-semi"><a href="" class="ft-dark">Documents <small><i class="fa fa-external-link"></i></small></a></h5>
+                                            <a href="" class="ft-dark col span_1_of_4 prop-header-link">Add <small><i class="fa fa-plus"></i></small></a>
+                                            
+                                        </header>
+                                        <a href="" class="group section prop-doc">
+                                        	<span class="col span_1_of_6 prop-doc-type pdf">
+                                            	<i class="fa fa-file-pdf-o"></i>
+                                            </span>
+                                            <span class="col span_5_of_6 prop-doc-name">
+                                            	Offering Memorandum
+                                            </span>
+                                        </a>
+                                        <a href="" class="group section prop-doc">
+                                        	<span class="col span_1_of_6 prop-doc-type excel">
+                                            	<i class="fa fa-file-excel-o"></i>
+                                            </span>
+                                            <span class="col span_5_of_6 prop-doc-name">
+                                            	Offering Memorandum
+                                            </span>
+                                        </a>
+                                        <a href="" class="group section prop-doc">
+                                        	<span class="col span_1_of_6 prop-doc-type word">
+                                            	<i class="fa fa-file-word-o"></i>
+                                            </span>
+                                            <span class="col span_5_of_6 prop-doc-name">
+                                            	Offering Memorandum
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="w-prop-item prop-images">
+                                    	<header class="group section w-prop-header">
+                                            <h5 class="col span_3_of_4 ft-semi"><a href="" class="ft-dark">Images <small><i class="fa fa-external-link"></i></small></a></h5>
+                                            <a href="" class="ft-dark col span_1_of_4 prop-header-link">Add <small><i class="fa fa-plus"></i></small></a>                                        </header>
+                                        <div class="group section">
+                                        	<a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="group section">
+                                        	<a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Activity Area -->
+                        <!-- Beginning of research Area -->
+                        <div class="w-prop">
+                        	<h4 class="ft-light">Research</h4>
+                            <div class="group section">
+                            
+                            	<div class="col span_1_of_3 w-prop-item">
+                                	<header class="group section w-prop-header">
+                                            <h5 class="col span_4_of_4 ft-semi"><a href="" class="ft-dark">Neihborhood Photos <small><i class="fa fa-external-link"></i></small></a></h5>
+                                                                                  </header>
+                                        <div class="group section">
+                                        	<a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="group section">
+                                        	<a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="group section">
+                                        	<a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                            	<img src="img/prop-img.jpg">
+                                            </a>
+                                        </div>
+                                </div>
+                            	<div class="col span_2_of_3 w-prop-item">
+                                	<header class="group section w-prop-header">
+                                    	<h5 class="col span_3_of_4 ft-semi"><a href="" class="ft-dark">Demographics <small><i class="fa fa-external-link"></i></small></a></h5>
+                                   	</header>
+                                    <div>
+                                    	<table class="prop-table">
+                                        	<thead class="ft-semi">
+                                                <tr>
+                                                    <td></td>
+                                                    <th>3 Mile</th>
+                                                    <th>5 Mile</th>
+                                                    <th>10 Mile</th>
+                                                </tr>
+                                            </thead>
+                                            <tr>
+                                            	<th class="ft-semi">Income</th>
+                                                <td class="ft-light">$51,000</td>
+                                                <td class="ft-light">$62,000</td>
+                                                <td class="ft-light">$47,000</td>
+                                            </tr>
+                                            <tr>
+                                            	<th class="ft-semi">Population</th>
+                                                <td class="ft-light">120,000</td>
+                                                <td class="ft-light">500,000</td>
+                                                <td class="ft-light">1,000,000</td>
+                                            </tr>
+                                            <tr>
+                                            	<th class="ft-semi">Employment</th>
+                                                <td class="ft-light">80%</td>
+                                                <td class="ft-light">75%</td>
+                                                <td class="ft-light">80%</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- End of Research Area -->
+                        <!-- end of content area -->
+                    </div>
+                </article>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <script>
+               
+                    $(window).load(function(){
+                         $('.w-menu').easytabs({
+        panelContext: $(document),
+        updateHash: false
+        });  
+    $(document).on("click", ".w-menu-a", function(){
+        if ( $('.w-menu-container').is(':hidden') ){
+            $('.w-menu-container').slideDown();
+            }
+        })
+    $('.w-prop-tabs').easytabs({
+        updateHash: false});
+    $('.prop-info table tr td label').addClass('ft-semi');  
+                    })
+                
+
+                   
+                </script>
+            </section>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:IsMyDocuments msdt:dt="string">1</mso:IsMyDocuments>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>

@@ -1,0 +1,403 @@
+<section class="window w-medium w-property">
+            	<!-- Taskbar to close and expand -->
+            	<div class="w-topBar-Wrapper">
+                	<ul class="w-topBar ft-white">
+                    	<li class="w-topBar-Open">
+                        	<i class="fa fa-expand"></i>
+                        </li>
+                        <li class="w-topBar-Close">
+                        	<i class="fa fa-chevron-left"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End taskbar -->
+                
+            	<aside>
+                	<header class="ft-white">
+                    	<h3 class="ft-light">' + json.property.header.propertyName + ' </h3>
+                        <span class="w-bread ft-light">
+                        	' + json.property.header.breadCrumb + '
+                        </span>
+                    </header>
+                    
+                    <nav class="w-menu">
+                    	<ul>
+                        	<li>
+                            	<a href="#' + json.property.topMenu[0].href +'" class="ft-white w-menu-a">
+                                	<span class="ft-semi">Stage:</span>
+                                    <span class="ft-light">' + json.property.topMenu[0].link + '</span>
+                            	</a>
+                            </li>
+                            <li>
+                            	<a  href="#'+ json.property.topMenu[1].href +'" class="ft-white w-menu-a ft-semi">
+                                	'+ json.property.topMenu[1].link +'
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                
+                <article class="w-content">
+                	<div class="w-content-container">
+                		<!-- content area for the pages -->
+                        <!-- Area of hidden Menu container -->
+                        <div class="w-menu-container w-prop-item">
+                        	<span class="w-menu-closer">
+                            	[close]
+                            </span>
+                        	<div class="w-menu-item group section" id="w-menu-prop-status">
+                            	<form class="col span_2_of_3">
+                                    <fieldset>
+                                        <legend>Stage</legend>
+                                        <label for="fm-p-stage">
+                                            <span class="fm-title ft-light">Property Stage</span>
+                                            <span class="fm-guide ft-semi">Select the stage of this property</span>
+                                            <span class="fm-error"></span>
+                                            <select name="fm-p-stage" id="fm-p-stage">
+                                                <option value="" selected="selected"> -Select-</option>
+                                                <option value="">Lead</option>
+                                                <option value="">Prospect</option>
+                                                <option value="">Deal</option>
+                                            </select>
+                                        </label>
+                                        <label>
+                                        	<input type="submit" value="Save">
+                                        </label>
+                                    </fieldset>
+                            	</form>
+                                <form class="col span_1_of_3">
+                                	<fieldset>
+                                    	<legend>Status</legend>
+                                        <label for="fm-p-delete">
+                                        	<span class="fm-title ft-light">Property Status</span>
+                                            <span class="fm-guide ft-semi">Select property status.</span>
+                                            <span class="fm-error"></span>
+                                            <select>
+                                            	<option selected="selected">Active</option>
+                                                <option value="">Inactive</option>
+                                                <option value="">Delete</option>
+                                            </select>
+                                        </label>
+                                        <label>
+                                        	<input type="submit" value="Save">
+                                        </label>
+                                    </fieldset>
+                                    
+                                </form>
+                            </div>
+                            <div class="w-menu-item" id="w-menu-prop-stage">
+                            	<iframe
+                                  width="100%"
+                                  height="450"
+                                  frameborder="0" style="border:0"
+                                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCrAskAeLKc38h84CnOGDWdmnUbVzA6PSM&q=7335+NW+51+st,+Lauderhill,+FL+33319">
+                                </iframe>
+                            </div>
+                        </div>
+                        <!-- end of hidden menu -->
+                        
+                        <!-- Beginning of Property Information Area -->
+                        <div class="w-prop w-prop-tabs">
+                        	<ul class="w-prop-tab-menu">
+                            	<li><a href="#prop-info-property" title="" class="active">Property</a></li>
+                                <li><a href="#prop-info-owner" title="">Owner</a></li>
+                                <li><a href="#prop-info-financing" title="">Financing</a></li>
+                            </ul>
+                            <div class="w-prop-item">
+                            	<!-- Property Information form -->
+                            	<form class="section group prop-info " id="prop-info-property">
+                                	<table class="col span_2_of_4">
+                                    	<tr>
+                                        	<td>
+                                            	<label class="">Property Name</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value=" '+ json.property.propertyInfo.property.propertyName +' ">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Street Address</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.property.Address.street +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">City, State Zip</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value=" '+ json.property.propertyInfo.property.propertyAddress.city + json.property.propertyInfo.property.propertyAddress.State + json.property.propertyInfo.property.propertyAddress.zip +' ">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">County</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value=" '+ json.property.propertyInfo.property.County +' ">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">GLA (sqft)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="1'+ json.property.propertyInfo.property.GLA +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Lot Size</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.property.lot +'">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="col span_2_of_4">
+                                    	<tr>
+                                        	<td>
+                                            	<label class="">Type</label>
+                                            </td>
+                                            <td>
+                                            	<select class="ft-light">
+                                                	<option value="">Select</option>
+                                                    <option value="">Hotel</option>
+                                                    <option value="">Industrial</option>
+                                                    <option value="" selected="selected">'+ json.property.propertyInfo.property.type +'</option>
+                                                    <option value="">Office</option>
+                                                    <option value="">Retail</option>
+                                                    <option value="">Self Storage</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Year built</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.property.yearBuilt +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Units</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.property.units +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Vacancy (%)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.property.vacancy +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Price ($)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.property.price +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Assessed Val. ($)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.property.assessed +'"> 
+                                            </td>
+                                        </tr>
+                                    </table>                                    
+                                </form>
+                                <!-- Property Owner form -->
+                                <form class="section group prop-info " id="prop-info-owner">
+                                	<table class="col span_2_of_4">
+                                    	<tr>
+                                        	<td>
+                                            	<label class="">Owner Name</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.owner.ownerName +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Street Address</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.owner.ownerAddress.street +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">City, State Zip</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.owner.ownerAddress.city + ', ' + json.property.propertyInfo.owner.ownerAddress.State + ' ' + json.property.propertyInfo.owner.ownerAddress.zip +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Purchase Date</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.owner.purchaseDate +'">
+                                            </td>
+                                        </tr>
+                                        
+                                    </table>
+                                    <table class="col span_2_of_4">
+                                    	
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Purchase Price ($)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.owner.purchasePrice +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Management</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.owner.management +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Motivation</label>
+                                            </td>
+                                            <td>
+                                            	<select class="ft-light">
+                                                	<option value="">'+ json.property.propertyInfo.owner.motivation +'</option>
+                                                    <option value="">Medium</option>
+                                                    <option value="">Low</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Reason to sell</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.owner.reasonToSell +'">
+                                            </td>
+                                        </tr>
+                                    </table>                                    
+                                </form>
+                                <!-- Property Financing Form -->
+                                <form class="section group prop-info " id="prop-info-financing">
+                                	<table class="col span_2_of_4">
+                                    	<tr>
+                                        	<td>
+                                            	<label class="">Lender</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.financing.lender +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Current Bal. ($)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.financing.currentBal +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Original Amt. ($)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.financing.originalAmt +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Interest Rate (%)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.financing.interest +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">LTV</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.financing.ltv +'">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="col span_2_of_4">                                    	
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Origination</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.financing.origination +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Loan Term</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.financing.loanTerm +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Maturity date</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.financing.maturity +'">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Loan Status</label>
+                                            </td>
+                                            <td>
+                                            	<select class="ft-light">
+                                                	<option value="">'+ json.property.propertyInfo.financing.loanStatus +'</option>
+                                                    <option value="">30+ days</option>
+                                                    <option value="">60+ days</option>
+                                                    <option value="">90+ days</option>
+                                                    <option value="">Foreclosure</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>
+                                            	<label class="">Monthly pymt ($)</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="'+ json.property.propertyInfo.financing.monthlyPmt +'">
+                                            </td>
+                                        </tr>
+                                    </table>                                    
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End of Property Information Area -->
+                        
+                        <!-- end of content area -->
+                    </div>
+                </article>
+                
+                
+            </section><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:IsMyDocuments msdt:dt="string">1</mso:IsMyDocuments>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
