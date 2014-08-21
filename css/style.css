@@ -857,3 +857,50 @@ section {
 Single, doubles, thirds, quarters 
 */
 
+/*Profile page traits*/
+img.prof-picture {
+    max-width:85px;
+    max-height:85px;
+}
+img.prop-picture {
+    max-width:50px;
+    max-height:50px;
+}
+textarea.prof-textarea {
+    resize: vertical;
+    overflow: auto;
+    padding: 5px;
+}
+i.prof-icon {
+    margin: 2px;
+}
+
+.contact-chart {
+    margin-top:0px;
+    font-size:14px;
+}
+.contact-chart div {
+    padding:0 10px 15px;
+    border-bottom:1px solid rgba(77,77,77,1);
+    overflow: hidden;
+}
+.contact-chart a {
+    display: block;
+    padding:5px 10px;
+    overflow: hidden;
+    border-bottom:1px solid rgba(147,169,168,.5);
+}
+.contact-chart a:nth-child(odd) {
+    background:rgba(189,189,189,1);
+}  
+.contact-chart a:hover {
+    background: rgba(186,255,252,1);
+}
+.contact-chart a span, .contact-chart div span {
+    display:block;
+    float:left;
+}
+.contact-chart .contact-name {width:27%;}
+.contact-chart .contact-email { width:45%;}
+
+/*End of Profile traits*/
