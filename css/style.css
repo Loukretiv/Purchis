@@ -15,7 +15,122 @@ background-color:#163038;
     display:block;
     clear:both;
 }
-/* Foats */
+/*Login Page styles*/
+.loginBody {
+	background:url(../img/Login.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	position:relative;
+	}
+.loginContent {
+	width:410px;
+	position:absolute;
+	right:0;
+	height:100%;
+	background-color:white;
+	box-sizing:border-box;
+	padding:50px 35px 0;
+	}
+.loginInner {
+	height:100%;
+	position:relative;
+	}
+.loginInner .copyInfo {
+	position:absolute;
+	bottom:10px;
+	font-size:10px;
+	display:block;
+	opacity:.7
+	}
+.copyInfo:hover {
+	opacity:1;}
+.loginContent h1 {
+	margin-bottom:100px;
+	}
+.loginNote {
+	margin-bottom:50px;
+	display:block;
+	}
+.loginForm {}
+.loginForm div a {
+	color:#8f061e;
+	font-size:12px;
+	display:block;
+	text-align:right;
+	margin-top:5px;
+	}
+.loginForm div a:hover, .loginForm span a:hover {
+	cursor:pointer;
+	text-decoration:underline;
+	}
+.loginForm span {
+	display:block;
+	}
+.loginForm span a {
+	color:black;
+	}
+.loginForm label {
+	display:block;
+	margin-bottom:10px;
+	}
+.loginForm label span {
+	margin-bottom:5px;}
+.loginForm label input {
+	width:100%;
+	outline:none;
+	}
+.loginForm input[type=submit] {
+	width:100%;
+	box-sizing:border-box;
+	border:none;
+	color:white;
+	background-color:#163038;
+	height:40px;
+	text-align:center;
+	font-size:16px;
+	margin-top:10px;
+	}
+.loginForm input[type=submit]:hover {
+	background-color:#8f061e;
+	cursor:pointer;
+	}
+.loginForm label input[type=text], .loginForm label input[type=password] {
+	padding:5px 10px;
+	font-size:16px;
+	border:1px solid #163038;
+	box-sizing:border-box;
+	height:40px;
+	
+	}
+.loginForm label input[type=text]:focus, .loginForm label input[type=password]:focus {
+	/*border-color:#8f061e;*/
+	color:white;
+	background-color:#163038
+	}
+.pwReset {
+	display:none;
+	}
+.pwAdv {
+	font-size:14px;
+	margin-bottom:20px;
+	}
+.logPg {
+	margin-left:6.5%;
+	padding-top:35px;
+	width:calc(93.5% - 410px);
+	}
+.largeText {
+	font-size:99px;
+	}
+.smallText {
+	display:block;
+	margin:20px 0 0 5px;
+	font-size:24px;
+	}
+/*End login styles*/
+/* Floats */
 .fl-row {
     clear:both;
 }

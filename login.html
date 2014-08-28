@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+		<meta charset="utf-8">
+        <!-- Apple devices fullscreen -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- Apple devices fullscreen -->
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        
+        <title>Login || PURCHIS</title>
+        
+        <!-- linked files -->
+        <link rel="shortcut icon" href="img/favicon.ico" /> 
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/Typography.css"/>
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="stylesheet" href="css/style.css" />    
+    </head>
+    
+    <body class="loginBody">
+    	<div class="loginContent">
+        	<div class="loginInner">
+                <h1 class="ft-light">Purchis</h1>
+                
+                <p class="ft-light loginNote">Welcome, please sign in.</p>
+                <form class="loginForm">
+                    <div class="signinForm">
+                        <label for="">
+                            <span class="">Email Address:</span>
+                            <input type="text" name="" class="ft-thin">
+                        </label>
+                        <label for="">
+                            <span class="">Password:</span>
+                            <input type="password" name="" class="ft-thin">
+                        </label>
+                        <input type="submit" value="Sign In" class="ft-thin">
+                        <a class="switching fgtPass">Forgot Password</a>
+                    </div>
+                    <div class="pwReset">
+                        <span class="ft-thin pwAdv" >
+                            If your profile is the only admin account in your subscription, please fill in the form below.
+                            <br><br>
+                            Otherwise, please contact your subscription administrator to reset your account password.
+                        </span>
+                        <label for="">
+                            <span class="">Email Address:</span>
+                            <input type="text" name="" class="ft-thin">
+                        </label>
+                        <input type="submit" value="Get reset link" class="ft-thin">
+                        <a class="switching">Back to Login</a>
+                    </div>                
+                </form>
+                <p class="copyInfo">&copy; <a href="http://loukretiv.com" title="Loukretiv"><img src="img/LoginLogo.png" alt="Loukretiv"></a><sup>TM</sup> &nbsp;2014. All Rights Reserved.</p>
+           </div> 
+        </div>  
+        <div class="logPg ft-white">
+        	<p class="largeText ft-thin">Welcome to your <br>competitive advantage.</p>
+            <p class="smallText ft-light">Moden Deal-modeling solution for the sophisticated CRE Investor.</p>
+        </div>      
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>
