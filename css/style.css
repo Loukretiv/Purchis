@@ -15,6 +15,35 @@ background-color:#163038;
     display:block;
     clear:both;
 }
+/*Sign Up Page Styles*/
+.signUpBody {
+	background:#163038;
+	}
+.signUpCont {
+	width:600px;
+	margin:0 auto;
+	}
+.signUpCont .innerWrap {
+	width:340px;
+	margin:0 auto;
+	}
+.signUpCont h1 {
+	margin:50px 0;
+	}
+.signUpCont .signUpText {
+	}
+.signUpCont .signUpText p {
+	font-size:20px;
+	margin-bottom:10px;
+	}
+.signUpCont .signUpText a:hover {
+	cursor:pointer;
+	text-decoration:underline;
+	}
+.codeReq {
+	display:none;
+	}
+/*End Sign Up Page*/
 /*Login Page styles*/
 .loginBody {
 	background:url(../img/Login.jpg) center center no-repeat;
