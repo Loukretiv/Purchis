@@ -34,7 +34,7 @@ background-color:#163038;
 	}
 .signUpCont .signUpText p {
 	font-size:20px;
-	margin-bottom:10px;
+	margin-bottom:15px;
 	}
 .signUpCont .signUpText a:hover {
 	cursor:pointer;
@@ -43,6 +43,20 @@ background-color:#163038;
 .codeReq {
 	display:none;
 	}
+.signUpAdv {
+	margin-bottom:30px !important;
+	}
+.signUpAdv span {
+	display:block;
+	}
+.signUpAdv span:first-child {
+	font-size:22px;
+	margin-bottom:10px;
+	}
+.signUpAdv span:nth-child(2) {
+	font-size:16px;
+	}
+
 /*End Sign Up Page*/
 /*Login Page styles*/
 .loginBody {
@@ -125,7 +139,7 @@ background-color:#163038;
 	background-color:#8f061e;
 	cursor:pointer;
 	}
-.loginForm label input[type=text], .loginForm label input[type=password] {
+.loginForm label input[type=text], .loginForm label input[type=password], .loginForm label select {
 	padding:5px 10px;
 	font-size:16px;
 	border:1px solid #163038;
@@ -1046,5 +1060,48 @@ i.prof-icon {
 }
 .contact-chart .contact-name {width:27%;}
 .contact-chart .contact-email { width:45%;}
-
+input.empty {
+    font-family: FontAwesome, "Segoe UI Light", "proxima-nova", "Kozuka Gothic Pro EL", helvetica, arial, sans-serif; 
+	font-weight:100;
+    font-style: normal;
+    text-decoration: inherit;
+}
+.SignUp {}
+.SignUp fieldset {
+	border:1px solid rgba(255,255,255,.5);
+	padding:20px;
+	margin-bottom:50px;
+	}
+.SignUp fieldset h2 {
+	text-align:center}
+.SignUp fieldset h2 span {
+	text-decoration:line-through;
+	font-size:24px !important
+	}
+.SignUp fieldset legend {
+	padding:20px;
+	color:white;
+	font-size:24px;
+	font-family: "Segoe UI Light", "proxima-nova", "Kozuka Gothic Pro EL", helvetica, arial, sans-serif; 
+	font-weight:100;
+	text-transform:uppercase;
+	}
+.paymentOpts {}
+.paymentOpts li {
+	display:block;
+	float:left;
+	margin-right:10px;
+	}
+.paymentOpts li a {
+	color:white;
+	font-size:35px;
+	opacity:.7;
+	}
+.paymentOpts li a:hover {
+	opacity:1;
+	}
+.paymentOpts li a i {}
+.paymentSet {
+	display:none;
+	}
 /*End of Profile traits*/

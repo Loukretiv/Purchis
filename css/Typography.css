@@ -22,5 +22,9 @@ h6 {}
 .ft-dark-grey {color:#494949;}
 .ft-dark {color:black;}
 .ft-dark-green {color:#163038}
-.ft-loukblue {color:#a3c1c9}
+.ft-loukblue {color:#a3c1c9 !important}
 .ft-red {color:#8f061e;}
+
+em {
+	font-style:italic !important;
+	}
