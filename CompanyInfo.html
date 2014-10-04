@@ -1,0 +1,535 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+ <head>
+        <meta charset="utf-8">
+        <!-- Apple devices fullscreen -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- Apple devices fullscreen -->
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        
+        <title>PURCHIS || CRE Investment Platform</title>
+        
+        <!-- linked files -->
+        <link rel="shortcut icon" href="img/favicon.ico" /> 
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/Typography.css"/>
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        
+
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- End of linked files -->
+        <script type="javascript">
+            google.load("visualization", "1", {packages:["corechart"]});
+			  google.setOnLoadCallback(drawIncome);
+			  function drawIncome() {
+				var data = google.visualization.arrayToDataTable([
+				  ['Source', 'Amount'],
+				  ['Rental', 123,456],
+				  ['Reimbursed', 23,456],
+				  ['Other', 3,456]
+				]);
+		
+				var options = {
+				  title: 'Income'
+				};
+		
+				var chart = new google.visualization.PieChart(document.getElementById('incomeChart'));
+				chart.draw(data, options);
+			  }
+        </script>
+        
+    
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:IsMyDocuments msdt:dt="string">1</mso:IsMyDocuments>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+    <body>
+			<section class="window w-large w-property">
+            	<!-- Taskbar to close and expand -->
+            	<div class="w-topBar-Wrapper">
+                	<ul class="w-topBar ft-white">
+                    	<li class="w-topBar-Open">
+                        	<i class="fa fa-expand"></i>
+                        </li>
+                        <li class="w-topBar-Close">
+                        	<i class="fa fa-chevron-left"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End taskbar -->
+                <div class="tabber">
+            	<aside>
+                	<header class="ft-white">
+                    	<h3 class="ft-light">Company Infomation</h3>
+                        <span class="w-bread ft-light">
+                        	Members/Company Data
+                        </span>
+                    </header>
+                    
+                    <nav class="w-menu">
+                    	<ul>
+
+                            <li>
+                                <a  href="#w-menu-prop-stage" class="ft-white w-menu-a ft-semi">Settings</a>
+                            </li>
+                            <li class="hider">
+                            	<a   href="#w-menu-prop-stage" class="ft-white w-menu-a ft-semi" data-duplicate-add="member_property">+ Add</a>
+                            </li>
+                            <li class="hider">
+                                <a  href="#w-menu-prop-stage" class="ft-white w-menu-a ft-semi" data-duplicate-remove="member_property">- Remove</a>
+                            </li>
+                            <!--<li>
+                                <button data-duplicate-add="member_property" class="adder_remover">+ add</button>
+                                <button data-duplicate-remove="member_property " class="adder_remover">- remove</button>
+                            </li> -->
+                        </ul>
+                    </nav>
+                </aside>
+                </div>
+
+                <article class="w-content">
+                	<div class="w-content-container">
+                		<!-- content area for the pages -->
+                        <!-- Area of hidden Menu container -->
+                        <div class="w-menu-container w-prop-item">
+                        <span class="w-menu-closer">
+                                [close]
+                        </span>
+                            <div class="w-menu-item" id="w-menu-prop-stage">
+                            <h3 class="ft-thin">Settings</h3>
+                                        <tr>
+                                            <td>
+                                                <label class="">Payment Method     </label>
+                                            </td>
+                                            <td>
+                                                <select class="ft-light">
+                                                    <option value="">Auto</option>
+                                                    <option value="" selected="selected">Manual</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                            </div>
+                        </div>
+                        <!-- end of hidden menu -->
+                        <!-- Beginning of Property Information Area -->
+                        <div class="w-prop w-prop-tabs">
+                        	<ul class="w-prop-tab-menu">
+                            	<li><a href="#prop-info-company-info" title="" class="active">Company Infomation</a></li>
+                                <li class="tabber" id="mem_info"><a href="#prop-info-member-info" title="">Member Information</a></li>
+                                <li><a href="#prop-info-licensing-info" title="">Licensing Information</a></li>
+                            </ul>
+                            <div  class="w-prop-item">
+                            	<!-- Property Information form -->
+
+                                <form class="section group prop-info " id="prop-info-company-info">
+                                <table class="col span_2_of_3">
+                                        <tr>
+                                            <td>
+                                                <label class="">Company Name</label>
+                                            </td>
+                                            <td>
+                                                <input class="ft-light" type="text" value="Loukretiv">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="">Street</label>
+                                            </td>
+                                            <td>
+                                                <input class="ft-light" type="text" value="7730 W Commercial Blvd">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="">City</label>
+                                            </td>
+                                            <td>
+                                                <input class="ft-light" type="text" value="Fort Lauderdale">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="">Zip</label>
+                                            </td>
+                                            <td>
+                                                <input class="ft-light" type="text" value="33351">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="">State</label>
+                                            </td>
+                                            <td>
+                                                <select class="ft-light">
+                                                    <option value="">Alabama</option>
+                                                    <option value="">Alaska</option>
+                                                    <option value="">Arizona</option>
+                                                    <option value="">Arkansas</option>
+                                                    <option value="">California</option>
+                                                    <option value="">Colorado</option>
+                                                    <option value="">Connecticut</option>
+                                                    <option value="">Delaware</option>
+                                                    <option value="" selected="selected">Florida</option>
+                                                    <option value="">Georgia</option>
+                                                    <option value="">Hawaii</option>
+                                                    <option value="">Idaho</option>
+                                                    <option value="">Illinois</option>
+                                                    <option value="">Indiana</option>
+                                                    <option value="">Iowa</option>
+                                                    <option value="">Kansas</option>
+                                                    <option value="">Kentucy</option>
+                                                    <option value="">Louisiana</option>
+                                                    <option value="">Maine</option>
+                                                    <option value="">Maryland</option>
+                                                    <option value="">Massachusetts</option>
+                                                    <option value="">Michigan</option>
+                                                    <option value="">Minnesota</option>
+                                                    <option value="">Mississippi</option>
+                                                    <option value="">Missouri</option>
+                                                    <option value="">Montana</option>
+                                                    <option value="">Nebraska</option>
+                                                    <option value="">New Hampshire</option>
+                                                    <option value="">New Jersey</option>
+                                                    <option value="">New Mexico</option>
+                                                    <option value="">New York</option>
+                                                    <option value="">North Carolina</option>
+                                                    <option value="">North Dakota</option>
+                                                    <option value="">Ohio</option>
+                                                    <option value="">Oklahoma</option>
+                                                    <option value="">Oregon</option>
+                                                    <option value="">Pennsylvania</option>
+                                                    <option value="">Rhode Island</option>
+                                                    <option value="">South Carolina</option>
+                                                    <option value="">South Dakota</option>
+                                                    <option value="">Tennessee</option>
+                                                    <option value="">Texas</option>
+                                                    <option value="">Utah</option>
+                                                    <option value="">Vermont</option>
+                                                    <option value="">Virginia</option>
+                                                    <option value="">Washington</option>
+                                                    <option value="">West Virginia</option>
+                                                    <option value="">Wisconsin</option>
+                                                    <option value="">Wyoming</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="">Email</label>
+                                            </td>
+                                            <td>
+                                                <input class="ft-light" type="text" value="purchis@loukretiv.com">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="">Phone Number</label>
+                                            </td>
+                                            <td>
+                                                <input class="ft-light" type="text" value="954-555-5555">
+                                            </td>
+                                        </tr>
+                                    </table> 
+                                </form>
+
+                            	<form  class="section group prop-info " id="prop-info-member-info">
+
+                                <li>
+                                    <button data-duplicate-add="member_property" class="adder_remover" type="button">Add User</button>
+                                </li>
+
+                                	<div data-duplicate="member_property">
+                                    <table class="col span_1_of_3">
+                                    	<tr>
+                                        	<td>
+                                                <button data-duplicate-remove="member_property" class="adder_remover">-</button>
+                                            	<label class="">Name</label>
+                                            </td>
+                                            <td>
+                                            	<input class="ft-light" type="text" value="">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="col span_1_of_3">
+                                    	<tr>
+                                        	<td>
+                                            	<label class="">Privilege</label>
+                                            </td>
+                                            <td>
+                                            	<select class="ft-light">
+                                                    <option value="">Admin User</option>
+                                                    <option value="" selected="selected">Regular User</option>
+                                                    <option value="">Super Admin User</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="col span_1_of_3">
+                                        <tr>
+                                            <td>
+                                                <label class="">Company Alias</label>
+                                            </td>
+                                            <td>
+                                                <input class="ft-light" type="text" value="">
+                                            </td>
+                                        </tr>
+                                        
+                                    </table>
+                                    </div>                                    
+                                </form>
+
+                                <form class="section group prop-info " id="prop-info-licensing-info">
+                                <table class="col span_1_of_3">
+                                        <tr>
+                                            <td>
+                                                <label class="">License Type:</label>
+                                            </td>
+                                            <td>
+                                                <select class="ft-light">
+                                                    <option value="" selected="selected">Volume</option>
+                                                    <option value="">OEM</option>
+                                                    <option value="">Retail</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="">Experation Date:</label>
+                                            </td>
+                                            <td>
+                                                <label class="">12/31/1999</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="">Current Active Users:</label>
+                                            </td>
+                                            <td>
+                                                <label class="">8</label>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <label class="">Used Storage Space:</label>
+                                            </td>
+                                            <td>
+                                                <label class="">20GB</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="">Max Licensed Users:</label>
+                                            </td>
+                                            <td>
+                                                <label class="">25</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="">Max Storage Space:</label>
+                                            </td>
+                                            <td>
+                                                <label class="">100GB</label>
+                                            </td>
+                                        </tr>
+                                    </table> 
+                                </form>
+
+                            </div>
+
+                            <form>
+                                    <div class="section group">
+                                        <label for="" class="col span_1_of_3">
+                                            <input type="submit" value="Submit Changes" />
+                                        </label>
+                                    </div>
+                                </form>
+                        </div>
+                        <!-- End of Property Information Area -->
+                        <!-- Beginning of Activity Area -->
+                        <div class="w-prop">
+                        	<h4 class="ft-light">User Forum Activity</h4>
+                            <div class="group section">
+                            	<!-- Property feeds section -->
+                            	<div class="col span_2_of_3 w-prop-item">
+                                	<header class="group section w-prop-header">
+                                    	<h5 class="col span_3_of_4 ft-semi"><a href="" class="ft-dark">Feed <small><i class="fa fa-external-link"></i></small></a></h5>
+                                        <a href="" class="ft-dark col span_1_of_4 prop-header-link">New <small><i class="fa fa-plus"></i></small></a>
+                                    </header>
+                                    <ul class="prop-feed">
+                                    	<li class="group section">
+                                        	<div class="col span_1_of_3 prop-feed-meta">
+                                            	<span class="ft-semi">Joram Clervius</span>
+                                                <span class="ft-light">December 12, 2014</span>
+                                            </div>
+                                            <div class="col span_2_of_3 prop-feed-content">
+                                            	<p>In here is a comment, just so you know. This is where they will go. These people are funny, thinking that we would go down without a fight. Little do they know</p>
+                                            </div>
+                                        </li>
+                                        <li class="group section">
+                                        	<div class="col span_1_of_3 prop-feed-meta">
+                                            	<span class="ft-semi">Joram Clervius</span>
+                                                <span class="ft-light">December 12, 2014</span>
+                                            </div>
+                                            <div class="col span_2_of_3 prop-feed-content">
+                                            	<p>In here is a comment, just so you know. This is where they will go. These people are funny, thinking that we would go down without a fight. Little do they know</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End of Property feed section --><div class="col span_1_of_3 w-prop-item w-clickable">
+                                    <header class="group section w-prop-header">
+                                            <h5 class="col span_4_of_4 ft-semi"><a href="" class="ft-dark">Recently Added Properties <small><i class="fa fa-external-link"></i></small></a></h5>
+                                    </header>
+                                        <div class="group section">
+                                            <a class="col span_1_of_4" href="">
+                                                <img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                                <img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                                <img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                                <img src="img/prop-img.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="group section">
+                                            <a class="col span_1_of_4" href="">
+                                                <img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                                <img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                                <img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                                <img src="img/prop-img.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="group section">
+                                            <a class="col span_1_of_4" href="">
+                                                <img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                                <img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                                <img src="img/prop-img.jpg">
+                                            </a>
+                                            <a class="col span_1_of_4" href="">
+                                                <img src="img/prop-img.jpg">
+                                            </a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Activity Area -->
+                        <!-- end of content area -->
+                    </div>
+                </article>
+                <script>
+                </script>
+                
+            </section>
+
+
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/jquery.easytabs.min.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+     	<script type="text/javascript" src="js/property charts/gchart-income-expense.js"></script>
+        <script src="js/Scripts.js"></script>
+        <script>
+        (function($){
+        $(window).load(function(){
+				
+                $("body").mCustomScrollbar({
+                    axis:"x",
+                    autoHideScrollbar:true,
+                    theme:"light-2",
+                    mouseWheel:{ enable: false }
+                    });
+                $(".dashContainer").mCustomScrollbar({
+                    autoHideScrollbar:true,
+                    theme:"light-thin"
+                    });
+                $(".w-content-container").mCustomScrollbar({
+                    autoHideScrollbar:true,
+                    theme:"dark-thin",
+                    scrollbarPosition: "outside"
+                    });
+            });
+        })(jQuery);         
+        </script>
+        <script>
+        $('.w-menu').easytabs({
+        panelContext: $('.w-menu-container'),
+        updateHash: false
+        });  
+    $('.w-prop-tabs').easytabs({
+        updateHash: false});
+    $(document).on("click", ".w-menu-a", function(){
+        if ( $('.w-menu-container').is(':hidden') ){
+            $('.w-menu-container').slideDown();
+            }
+        })
+        </script>
+        <script type="text/javascript">
+		  google.setOnLoadCallback(drawIncome);
+		  google.setOnLoadCallback(drawExpenses);
+		</script>
+
+
+
+  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.duplicate.js"></script>
+    <script type="text/javascript">
+    //this is for adding and removing
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36251023-1']);
+      _gaq.push(['_setDomainName', 'jqueryscript.net']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+    <script>
+    //this is for fading in and out w/ adding and removing
+    $(document).ready(function(){
+    $("button").click(function(){
+    $("#member_info").hide().fadeIn(1000);
+    //$("#div2").fadeToggle("slow");
+    //$("#div3").fadeToggle(3000);
+    });
+    });
+    </script>
+
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+    $(".tabber").click(function() {
+    $(this).children(".hider").css("visibility","visible");
+    });
+
+    });
+    </script>
+
+ </body>
+ </html>
