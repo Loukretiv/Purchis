@@ -15,6 +15,49 @@ background-color:#163038;
     display:block;
     clear:both;
 }
+/*Sign Up Page Styles*/
+.signUpBody {
+	background:#163038;
+	}
+.signUpCont {
+	width:600px;
+	margin:0 auto;
+	}
+.signUpCont .innerWrap {
+	width:340px;
+	margin:0 auto;
+	}
+.signUpCont h1 {
+	margin:50px 0;
+	}
+.signUpCont .signUpText {
+	}
+.signUpCont .signUpText p {
+	font-size:20px;
+	margin-bottom:15px;
+	}
+.signUpCont .signUpText a:hover {
+	cursor:pointer;
+	text-decoration:underline;
+	}
+.codeReq {
+	display:none;
+	}
+.signUpAdv {
+	margin-bottom:30px !important;
+	}
+.signUpAdv span {
+	display:block;
+	}
+.signUpAdv span:first-child {
+	font-size:22px;
+	margin-bottom:10px;
+	}
+.signUpAdv span:nth-child(2) {
+	font-size:16px;
+	}
+
+/*End Sign Up Page*/
 /*Login Page styles*/
 .loginBody {
 	background:url(../img/Login.jpg) center center no-repeat;
@@ -96,7 +139,7 @@ background-color:#163038;
 	background-color:#8f061e;
 	cursor:pointer;
 	}
-.loginForm label input[type=text], .loginForm label input[type=password] {
+.loginForm label input[type=text], .loginForm label input[type=password], .loginForm label select {
 	padding:5px 10px;
 	font-size:16px;
 	border:1px solid #163038;
@@ -1017,5 +1060,97 @@ i.prof-icon {
 }
 .contact-chart .contact-name {width:27%;}
 .contact-chart .contact-email { width:45%;}
-
+input.empty {
+    font-family: FontAwesome, "Segoe UI Light", "proxima-nova", "Kozuka Gothic Pro EL", helvetica, arial, sans-serif; 
+	font-weight:100;
+    font-style: normal;
+    text-decoration: inherit;
+}
+.SignUp {}
+.SignUp fieldset {
+	border:1px solid rgba(255,255,255,.5);
+	padding:20px;
+	margin-bottom:50px;
+	}
+.SignUp fieldset h2 {
+	text-align:center}
+.SignUp fieldset h2 span {
+	text-decoration:line-through;
+	font-size:24px !important
+	}
+.SignUp fieldset legend {
+	padding:20px;
+	color:white;
+	font-size:24px;
+	font-family: "Segoe UI Light", "proxima-nova", "Kozuka Gothic Pro EL", helvetica, arial, sans-serif; 
+	font-weight:100;
+	text-transform:uppercase;
+	}
+.paymentOpts {}
+.paymentOpts li {
+	display:block;
+	float:left;
+	margin-right:10px;
+	}
+.paymentOpts li a {
+	color:white;
+	font-size:35px;
+	opacity:.7;
+	}
+.paymentOpts li a:hover {
+	opacity:1;
+	}
+.paymentOpts li a i {}
+.paymentSet {
+	display:none;
+	}
 /*End of Profile traits*/
+
+/*Begining of company infomation traits*/
+.adder_remover {
+    -moz-box-shadow:inset 0px 0px 3px 0px #f29c93;
+    -webkit-box-shadow:inset 0px 0px 3px 0px #f29c93;
+    box-shadow:inset 0px 0px 3px 0px #f29c93;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
+    background:-moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+    background:-webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+    background:-o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+    background:-ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+    background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100',GradientType=0);
+    background-color:#fe1a00;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    border:1px solid #d83526;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:0px 5px;
+    text-decoration:none;
+    text-shadow:0px 0px 0px #b23e35;
+}
+.adder_remover:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
+    background:-moz-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+    background:-webkit-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+    background:-o-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+    background:-ms-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+    background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00',GradientType=0);
+    background-color:#ce0100;
+}
+.adder_remover:active {
+    position:relative;
+    top:1px;
+}
+
+        
+.hider { visibility: hidden; }
+        
+
+
+/*End of company infomation traits*/
