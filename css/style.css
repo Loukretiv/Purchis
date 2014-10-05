@@ -145,12 +145,13 @@ background-color:#163038;
 	border:1px solid #163038;
 	box-sizing:border-box;
 	height:40px;
-	
+	transition:all 0.5;
 	}
 .loginForm label input[type=text]:focus, .loginForm label input[type=password]:focus {
 	/*border-color:#8f061e;*/
 	color:white;
-	background-color:#163038
+	background-color:#163038;
+	
 	}
 .pwReset {
 	display:none;

@@ -6,6 +6,14 @@ $(document).ready(function(){
 			other.fadeIn();
 			})
 		})
+	$(document).on("click", ".signin", function(){
+		event.preventDefault()
+		if ($('input[name="pw"]').val() == "Loukretiv" && $('input[name="user"]').val() == "demo@purchis.com") {
+			window.location.href = "0/dash.html";
+			} else {
+				$('.loginNote').after('<p class="ft-light ft-red">Incorrect Email and Password configuration.</p>')
+				}
+		})
 	$(document).on("click", ".agreementMade", function(){
 		event.preventDefault();
 		window.location.href = "signUpForm2.html"
