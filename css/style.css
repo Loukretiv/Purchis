@@ -1155,3 +1155,35 @@ input.empty {
 
 
 /*End of company infomation traits*/
+
+/*Begining of notification traits*/
+.notification-chart {
+    margin-top:0px;
+    font-size:14px;
+}
+.notification-chart div {
+    padding:0 10px 15px;
+    border-bottom:1px solid rgba(77,77,77,1);
+    overflow: hidden;
+}
+.notification-chart a {
+    display: block;
+    padding:5px 10px;
+    overflow: hidden;
+    border-bottom:1px solid rgba(147,169,168,.5);
+}
+.notification-chart a:nth-child(odd) {
+    background:rgba(189,189,189,1);
+}  
+.notification-chart a:hover {
+    background: rgba(186,255,252,1);
+}
+.notification-chart a span, .notification-chart div span {
+    display:block;
+    float:left;
+}
+.notification-chart .notification-category {width:20%; word-wrap: break-word;}
+.notification-chart .notification-date { width:15%; word-wrap: break-word;}
+.notification-chart .notification-summary { width:55%; word-wrap: break-word;}
+
+/*End of notification traits*/
