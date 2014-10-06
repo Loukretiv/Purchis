@@ -83,10 +83,6 @@
                             <li class="hider">
                                 <a  href="#w-menu-prop-stage" class="ft-white w-menu-a ft-semi" data-duplicate-remove="member_property">- Remove</a>
                             </li>
-                            <!--<li>
-                                <button data-duplicate-add="member_property" class="adder_remover">+ add</button>
-                                <button data-duplicate-remove="member_property " class="adder_remover">- remove</button>
-                            </li> -->
                         </ul>
                     </nav>
                 </aside>
@@ -116,18 +112,13 @@
                             </div>
                         </div>
                         <!-- end of hidden menu -->
-                        <!-- Beginning of Property Information Area -->
-                        <div class="w-prop w-prop-tabs">
-                        	<ul class="w-prop-tab-menu">
-                            	<li><a href="#prop-info-company-info" title="" class="active">Company Infomation</a></li>
-                                <li class="tabber" id="mem_info"><a href="#prop-info-member-info" title="">Member Information</a></li>
-                                <li><a href="#prop-info-licensing-info" title="">Licensing Information</a></li>
-                            </ul>
-                            <div  class="w-prop-item">
-                            	<!-- Property Information form -->
-
+                        <!-- Beginning of Company Information Area -->
+                        <div class="w-prop">
+                        <h4 class="ft-light">Company Information</h4>
+                        <div class="group section">
+                        <div class="col span_3_of_3 w-prop-item">
                                 <form class="section group prop-info " id="prop-info-company-info">
-                                <table class="col span_2_of_3">
+                                <table class="col span_3_of_3">
                                         <tr>
                                             <td>
                                                 <label class="">Company Name</label>
@@ -231,37 +222,43 @@
                                                 <label class="">Phone Number</label>
                                             </td>
                                             <td>
-                                                <input class="ft-light" type="text" value="954-555-5555">
+                                                <input class="ft-light" type="tel" value="954-555-5555">
                                             </td>
                                         </tr>
                                     </table> 
                                 </form>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- End of Company Information Area -->
 
-                            	<form  class="section group prop-info " id="prop-info-member-info">
-
-                                <li>
-                                    <button data-duplicate-add="member_property" class="adder_remover" type="button">Add User</button>
-                                </li>
-
-                                	<div data-duplicate="member_property">
+                        <!-- Begining of Membership Information Area -->
+                        <div class="w-prop">
+                            <h4 class="ft-light">Membership Information</h4>
+                            <div class="group section">
+                                <!-- Property feeds section -->
+                                <div class="col span_3_of_3 w-prop-item">
+                                    <!--<header class="group section w-prop-header">-->
+                                        <form  class="section group prop-info " id="prop-info-member-info">
+                                    <div data-duplicate="member_property">
                                     <table class="col span_1_of_3">
-                                    	<tr>
-                                        	<td>
+                                        <tr>
+                                            <td>
                                                 <button data-duplicate-remove="member_property" class="adder_remover">-</button>
-                                            	<label class="">Name</label>
+                                                <label class="">Name</label>
                                             </td>
                                             <td>
-                                            	<input class="ft-light" type="text" value="">
+                                                <input class="ft-light" type="text" value="">
                                             </td>
                                         </tr>
                                     </table>
                                     <table class="col span_1_of_3">
-                                    	<tr>
-                                        	<td>
-                                            	<label class="">Privilege</label>
+                                        <tr>
+                                            <td>
+                                                <label class="">Privilege</label>
                                             </td>
                                             <td>
-                                            	<select class="ft-light">
+                                                <select class="ft-light">
                                                     <option value="">Admin User</option>
                                                     <option value="" selected="selected">Regular User</option>
                                                     <option value="">Super Admin User</option>
@@ -280,11 +277,24 @@
                                         </tr>
                                         
                                     </table>
-                                    </div>                                    
+                                    </div>
+                                    <li>
+                                    <button data-duplicate-add="member_property" class="adder_remover" type="button">Add User</button>
+                                </li>                                    
                                 </form>
 
-                                <form class="section group prop-info " id="prop-info-licensing-info">
-                                <table class="col span_1_of_3">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Membership Information Area -->
+
+                        <!-- Beginning of Licensing Area -->
+                        <div class="w-prop">
+                        	<h4 class="ft-light">Licensing Information</h4>
+                            <div class="group section">
+                            	<div class="col span_2_of_3 w-prop-item">
+                                    	<form class="section group prop-info " id="prop-info-licensing-info">
+                                <table class="col span_3_of_3">
                                         <tr>
                                             <td>
                                                 <label class="">License Type:</label>
@@ -299,141 +309,63 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <label class="">Experation Date:</label>
+                                                <label class="ft-light">Experation Date:</label>
                                             </td>
                                             <td>
-                                                <label class="">12/31/1999</label>
+                                                <label class="ft-light">12/31/1999</label>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <label class="">Current Active Users:</label>
+                                                <label class="ft-light">Current Active Users:</label>
                                             </td>
                                             <td>
-                                                <label class="">8</label>
+                                                <label class="ft-light">8</label>
                                             </td>
                                         </tr>
                                         
                                         <tr>
                                             <td>
-                                                <label class="">Used Storage Space:</label>
+                                                <label class="ft-light">Used Storage Space:</label>
                                             </td>
                                             <td>
-                                                <label class="">20GB</label>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <label class="">Max Licensed Users:</label>
-                                            </td>
-                                            <td>
-                                                <label class="">25</label>
+                                                <label class="ft-light">20GB</label>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <label class="">Max Storage Space:</label>
+                                                <label class="ft-light">Max Licensed Users:</label>
                                             </td>
                                             <td>
-                                                <label class="">100GB</label>
+                                                <label class="ft-light">25</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="ft-light">Max Storage Space:</label>
+                                            </td>
+                                            <td>
+                                                <label class="ft-light">100GB</label>
                                             </td>
                                         </tr>
                                     </table> 
                                 </form>
 
-                            </div>
-
-                            <form>
-                                    <div class="section group">
-                                        <label for="" class="col span_1_of_3">
-                                            <input type="submit" value="Submit Changes" />
-                                        </label>
-                                    </div>
-                                </form>
-                        </div>
-                        <!-- End of Property Information Area -->
-                        <!-- Beginning of Activity Area -->
-                        <div class="w-prop">
-                        	<h4 class="ft-light">User Forum Activity</h4>
-                            <div class="group section">
-                            	<!-- Property feeds section -->
-                            	<div class="col span_2_of_3 w-prop-item">
-                                	<header class="group section w-prop-header">
-                                    	<h5 class="col span_3_of_4 ft-semi"><a href="" class="ft-dark">Feed <small><i class="fa fa-external-link"></i></small></a></h5>
-                                        <a href="" class="ft-dark col span_1_of_4 prop-header-link">New <small><i class="fa fa-plus"></i></small></a>
-                                    </header>
-                                    <ul class="prop-feed">
-                                    	<li class="group section">
-                                        	<div class="col span_1_of_3 prop-feed-meta">
-                                            	<span class="ft-semi">Joram Clervius</span>
-                                                <span class="ft-light">December 12, 2014</span>
-                                            </div>
-                                            <div class="col span_2_of_3 prop-feed-content">
-                                            	<p>In here is a comment, just so you know. This is where they will go. These people are funny, thinking that we would go down without a fight. Little do they know</p>
-                                            </div>
-                                        </li>
-                                        <li class="group section">
-                                        	<div class="col span_1_of_3 prop-feed-meta">
-                                            	<span class="ft-semi">Joram Clervius</span>
-                                                <span class="ft-light">December 12, 2014</span>
-                                            </div>
-                                            <div class="col span_2_of_3 prop-feed-content">
-                                            	<p>In here is a comment, just so you know. This is where they will go. These people are funny, thinking that we would go down without a fight. Little do they know</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- End of Property feed section --><div class="col span_1_of_3 w-prop-item w-clickable">
-                                    <header class="group section w-prop-header">
-                                            <h5 class="col span_4_of_4 ft-semi"><a href="" class="ft-dark">Recently Added Properties <small><i class="fa fa-external-link"></i></small></a></h5>
-                                    </header>
-                                        <div class="group section">
-                                            <a class="col span_1_of_4" href="">
-                                                <img src="img/prop-img.jpg">
-                                            </a>
-                                            <a class="col span_1_of_4" href="">
-                                                <img src="img/prop-img.jpg">
-                                            </a>
-                                            <a class="col span_1_of_4" href="">
-                                                <img src="img/prop-img.jpg">
-                                            </a>
-                                            <a class="col span_1_of_4" href="">
-                                                <img src="img/prop-img.jpg">
-                                            </a>
-                                        </div>
-                                        <div class="group section">
-                                            <a class="col span_1_of_4" href="">
-                                                <img src="img/prop-img.jpg">
-                                            </a>
-                                            <a class="col span_1_of_4" href="">
-                                                <img src="img/prop-img.jpg">
-                                            </a>
-                                            <a class="col span_1_of_4" href="">
-                                                <img src="img/prop-img.jpg">
-                                            </a>
-                                            <a class="col span_1_of_4" href="">
-                                                <img src="img/prop-img.jpg">
-                                            </a>
-                                        </div>
-                                        <div class="group section">
-                                            <a class="col span_1_of_4" href="">
-                                                <img src="img/prop-img.jpg">
-                                            </a>
-                                            <a class="col span_1_of_4" href="">
-                                                <img src="img/prop-img.jpg">
-                                            </a>
-                                            <a class="col span_1_of_4" href="">
-                                                <img src="img/prop-img.jpg">
-                                            </a>
-                                            <a class="col span_1_of_4" href="">
-                                                <img src="img/prop-img.jpg">
-                                            </a>
-                                        </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- End of Activity Area -->
+                        <!-- End of Licensing Area -->
                         <!-- end of content area -->
+
+                        <!-- Submit button-->
+                        <form>
+                            <div class="section group">
+                                <label for="" class="col span_1_of_3">
+                                    <input type="submit" value="Submit Changes" />
+                                </label>
+                            </div>
+                        </form>
+                        <!-- Submit button-->
                     </div>
                 </article>
                 <script>
