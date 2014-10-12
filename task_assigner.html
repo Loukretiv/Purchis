@@ -1,0 +1,207 @@
+<!doctype html>
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="utf-8">
+    <!-- Apple devices fullscreen -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Apple devices fullscreen -->
+    <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>PURCHIS || CRE Investment Platform</title>
+    <link rel="shortcut icon" href="img/favicon.ico" /> 
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/Typography.css"/>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/jquery-ui-1.9.0.custom.min.js"></script>
+</head>
+<body>
+<div class="container">
+<section class="window w-large">
+                <!-- Taskbar to close and expand -->
+                <div class="w-topBar-Wrapper">
+                    <ul class="w-topBar ft-white">
+                        <li class="w-topBar-Open">
+                            <i class="fa fa-expand"></i>
+                        </li>
+                        <li class="w-topBar-Close">
+                            <i class="fa fa-chevron-left"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End taskbar -->
+                
+                <aside>
+                    <header class="ft-white">
+                        <h3 class="ft-light">Task Assigner</h3>
+                        <span class="w-bread ft-light">
+                            Assign tasks to user by dragging them to the agenda 
+                        </span>
+                    </header>
+                    
+                    <nav class="w-menu">
+                        <ul class="clear">
+                            <li>
+                                <a href="" class="ft-white">
+                                </i> Submit Task(s)
+                                    <!--<i class="fa fa-plus"></i> Sample-->
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </aside>
+                
+                <article class="w-content">
+                    <div class="w-content-container">
+                    <section id="task" class="col span_1_of_3">
+        <ul class="clear">
+            <li data-id="1">
+                <a href="#">
+                    <h3>Task 1</h3>
+                    <p>Do this, do that.</p>
+                </a>
+            </li>
+            <li data-id="2">
+                <a href="#">
+                    <h3>Task 2</h3>
+                    <p>Do this, do that.</p>
+                </a>
+            </li>
+            <li data-id="3">
+                <a href="#">
+                    <h3>Task 3</h3>
+                    <p>Do this, do that.</p>
+                </a>
+            </li>
+            <li data-id="4">
+                <a href="#">
+                    <h3>Task 4</h3>
+                    <p>Do this, do that.</p>
+                </a>
+            </li>
+            <li data-id="5">
+                <a href="#">
+                    <h3>Task 5</h3>
+                    <p>Do this, do that.</p>
+                </a>
+            </li>
+            <li data-id="6">
+                <a href="#">
+                    <h3>Task 6</h3>
+                    <p>Do this, do that.</p>
+                </a>
+            </li>
+            <li data-id="7">
+                <a href="#">
+                    <h3>Task 7</h3>
+                    <p>Do this, do that.</p>
+                </a>
+            </li>
+            <li data-id="8">
+                <a href="#">
+                    <h3>Task 8</h3>
+                    <p>Do this, do that.</p>
+                </a>
+            </li>
+        </ul>
+  </section>
+
+</div>
+<div class="basket col span_2_of_3">
+            <div class="basket_list">
+                <div class="head">
+                <span class="baskettitle ft-dark">Agenda</span>
+                    <br>
+                    <span class="name ft-dark">Task(s)</span>
+                    <span class="duedate ft-dark">Due Date</span>
+                    <!--<span class="status">Completed</span>-->
+                </div>
+                <ul>
+                    <!--Currently needed-->
+                </ul>
+            </div>
+        </div>
+                        <!-- content area for the pages -->
+                        <!-- end of content area -->
+                    
+                </article>
+            </section>
+            </div>
+
+<script>
+    $(function () {
+
+		// jQuery UI Draggable
+		$("#task li").draggable({
+		
+			// brings the item back to its place when dragging is over
+			revert:true,
+		
+			// once the dragging starts, we decrease the opactiy of other items
+			// Appending a class as we do that with CSS
+			drag:function () {
+				$(this).addClass("active");
+				$(this).closest("#task").addClass("active");
+			},
+		
+			// removing the CSS classes once dragging is over.
+			stop:function () {
+				$(this).removeClass("active").closest("#task").removeClass("active");
+			}
+		});
+
+        // jQuery Ui Droppable
+		$(".basket").droppable({
+		
+			// The class that will be appended to the to-be-dropped-element (basket)
+			activeClass:"active",
+		
+			// The class that will be appended once we are hovering the to-be-dropped-element (basket)
+			hoverClass:"hover",
+		
+			// The acceptance of the item once it touches the to-be-dropped-element basket
+			// For different values http://api.jqueryui.com/droppable/#option-tolerance
+			tolerance:"touch",
+			drop:function (event, ui) {
+		
+				var basket = $(this),
+						move = ui.draggable,
+						itemId = basket.find("ul li[data-id='" + move.attr("data-id") + "']");
+		
+				// To increase the value by +1 if the same item is already in the basket
+				if (itemId.html() != null) {
+					itemId.find("input").val(parseInt(itemId.find("input").val()) + 1);
+				}
+				else {
+					// Add the dragged item to the basket
+					addBasket(basket, move);
+		
+					// Updating the quantity by +1" rather than adding it to the basket
+					move.find("input").val(parseInt(move.find("input").val()) + 1);
+				}
+			}
+		});
+
+        // This function runs onc ean item is added to the basket
+        function addBasket(basket, move) {
+			basket.find("ul").append('<li data-id="' + move.attr("data-id") + '">'
+					+ '<span class="name">' + move.find("h3").html() + '</span>'
+					+ '<input class="duedate" type="date">'
+                    + '<input class="completed" type="checkbox">'
+					+ '<button class="delete">&#10005;</button>'
+
+                    );
+		}
+
+        // The function that is triggered once delete button is pressed
+        $(".basket ul li button.delete").live("click", function () {
+			$(this).closest("li").remove();
+		});
+    });
+</script>
+
+</body>
+</html>
